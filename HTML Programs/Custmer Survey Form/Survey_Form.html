@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>Customer Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <h1>Customer Survey Form</h1>
+        <div class="container">
+            <form id="form">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name" id="label-name">
+                                Name 
+                            </label>
+                        </td>
+                        <td> 
+                            <label for="email" id="label-email">
+                                Email
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-control">
+                                <input type="text"
+                                        id="name"
+                                        placeholder="Enter your name" required/>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-control">
+                                <input type="email"
+                                        id="email"
+                                        placeholder="Enter your email" required/>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label>
+                                Is this first time You are using our products & service?
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="use1">
+                                <input type="radio"
+                                       id="use1"
+                                       name="use" value="Yes" required>Yes</input>
+                            </label>
+                        </td>
+                        <td>
+                            <label for="use2">
+                                <input type="radio"
+                                       id="use2"
+                                       name="use" value="No" required>No</input>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label>
+                                Would you suggest to your friend and colleague?
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="suggest1">
+                                <input type="radio"
+                                       id="suggest1"
+                                       name="suggest" value="Yes" required>Yes</input>
+                            </label>
+                        </td>
+                        <td>
+                            <label for="suggest2">
+                                <input type="radio"
+                                       id="suggest2"
+                                       name="suggest" value="No" required>No</input>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label>
+                                How satisfied are you with our company overall?
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="satisfied">
+                                <input type="radio"
+                                       id="satisfied"
+                                       name="satisfaction" value="Satistfied" required>Satistfied</input>
+                            </label>
+                        </td>
+                        <td>
+                            <label for="undecided">
+                                <input type="radio"
+                                       id="undecided"
+                                       name="satisfaction" value="Undecided" required>Undecided</input>
+                            </label>
+                        </td>
+                        <td>
+                            <label for="unsatisfied">
+                                <input type="radio"
+                                       id="unsatisfied"
+                                       name="satisfaction" value="Unsatisfied" required>Unsatisfied</input>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="comment">
+                                Do you have any suggestions to improve our service?
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="form-control">
+                                <textarea name="comment" id="comment"
+                                    placeholder="Enter your comment here" required>
+                                </textarea>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <input type= "button"  value="SUBMIT" onclick="submitForm()">
+                        </td>
+                        <div style="float: right;">
+                            <input type= "button" value="RESET" onclick="resetForm()">
+                        </div>   
+                    </tr>
+                </table>
+            </form> 
+        </div>
+    </body>
+</html>
